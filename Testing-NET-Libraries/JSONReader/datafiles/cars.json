@@ -1,0 +1,17 @@
+[
+  {
+    "Id": 1,
+    "Name": "Corsa",
+    "Brand": "Chevrolet"
+  },
+  {
+    "Id": 2,
+    "Name": "Scirocco",
+    "Brand": "Volkswagen"
+  },
+  {
+    "Id": 3,
+    "Name": "Mustang",
+    "Brand": "Ford"
+  }
+]
