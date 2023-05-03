@@ -2,3 +2,4 @@
 
 ### Currently, I have tested:
     - JSON Serialization and Deserialization.
+    - LINQ
