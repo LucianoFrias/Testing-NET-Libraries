@@ -1,5 +1,6 @@
 # Testing-NET-Libraries
 
-### Currently, I have tested:
+### Up until now, I have tested:
     - JSON Serialization and Deserialization.
     - LINQ
+    - Entity Framework
