@@ -4,3 +4,4 @@
     - JSON Serialization and Deserialization.
     - LINQ
     - Entity Framework
+    - Logging
