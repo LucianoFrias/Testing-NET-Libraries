@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections;
 using System.Text.Json;
@@ -8,6 +9,8 @@ using Testing_NET_Libraries.JSON.utils;
 using Testing_NET_Libraries.JSONReader.car;
 using Testing_NET_Libraries.JSONReader.utils;
 using Testing_NET_Libraries.LINQ;
+using Testing_NET_Libraries.Logger;
+using Testing_NET_Libraries.Logger.Models;
 
 // JSON
 
@@ -70,5 +73,15 @@ Console.WriteLine(foundClient.Id + " " + foundClient.FirstName);
 List<Client> clients = context.Clients.ToList();
 clients.ForEach(client => Console.WriteLine(client.Id + " " + client.FirstName));
 
+// Logger
 
+ILoggerFactory loggerFactory = new LoggerFactory();
+CustomerLogger customerLogger = new(loggerFactory.CreateLogger<CustomerLogger>());
+
+customerLogger.logCustomerData(new Customer()
+{
+    Id = 50,
+    FirstName = "Jose",
+    LastName = "Hernandez"
+});
 
