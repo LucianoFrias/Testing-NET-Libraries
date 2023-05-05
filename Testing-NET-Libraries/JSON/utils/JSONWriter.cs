@@ -10,11 +10,12 @@ using Testing_NET_Libraries.JSONReader.utils;
 
 namespace Testing_NET_Libraries.JSON.utils
 {
-    internal class JSONWriter<T>
+    internal class JSONWriter<T> : IJSONWriter<T>
     {
-        public static void writeJSONToFile(string path, T element)
+        public void writeJSONToFile(string path, T element)
         {
-            List<T> elements = JSONReader<T>.readJson(path);
+            JSONReader<T> jsonReader = new JSONReader<T>();
+            List<T> elements = jsonReader.readJson(path);
 
             elements.Add(element);
 

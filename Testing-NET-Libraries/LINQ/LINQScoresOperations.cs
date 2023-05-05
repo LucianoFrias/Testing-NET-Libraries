@@ -11,7 +11,7 @@ namespace Testing_NET_Libraries.LINQ
         public List<int>? Scores { get; set; }
         public List<int>? SecondaryScores { get; set; }
 
-        public List<int>? getScoresGreatherThanFifty()
+        public List<int>? getScoresGreaterThanFifty()
         {
             IEnumerable<int> scoresGreaterThanFifty =
                 from score in Scores
