@@ -5,3 +5,4 @@
     - LINQ
     - Entity Framework
     - Logging
+    - XUnit
